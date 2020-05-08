@@ -1,6 +1,6 @@
 FROM alpine:3
 
-ARG KUBE_VERSION="v1.15.12"
+ARG KUBE_VERSION="v1.16.9"
 
 LABEL org.label-schema.version=$KUBE_VERSION \
     org.label-schema.name="kubectl-git" \
