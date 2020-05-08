@@ -1,6 +1,6 @@
 FROM alpine
 
-ENV KUBE_VERSION="v1.11.0"
+ARG KUBE_VERSION="v1.12.10"
 
 RUN apk add --update ca-certificates \
  && apk add --update curl git \
