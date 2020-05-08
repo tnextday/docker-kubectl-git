@@ -1,13 +1,9 @@
-FROM alpine
+FROM alpine:3
 
 ARG KUBE_VERSION="v1.12.10"
-ARG VCS_REF
-ARG BUILD_DATE
 
 LABEL org.label-schema.version=$KUBE_VERSION \
     org.label-schema.name="kubectl-git" \
-    org.label-schema.vcs-ref=$VCS_REF \
-    org.label-schema.build-date=$BUILD_DATE \
     org.label-schema.vcs-url="https://github.com/tnextday/kubectl-git"
 
 RUN apk add --update ca-certificates \
